@@ -25,7 +25,7 @@ int search(int* nums, int numsSize, int target) {
     return -1;
 }
 
-// Simple binary search!!
+// Same, more compact
 int search2(int* a, int n, int x) {
     int left = 0, right = n-1, mid;
     while (left <= right) {
@@ -37,6 +37,7 @@ int search2(int* a, int n, int x) {
     return -1;        
 }
 
+// Slightly simpler but less efficient
 int search3(int* a, int n, int x) {
     int left = 0, right = n-1, mid;
     while (left < right) {
